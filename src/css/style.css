@@ -1,0 +1,133 @@
+* {
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  font-size: 16px;
+}
+
+.hidden {
+  display: none;
+}
+
+.chat {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(116, 160, 116);
+  max-height: 400px;
+  min-height: 400px;
+  background-color: rgb(116, 160, 116);
+}
+
+.messagesArea {
+  flex-grow: 1;
+  padding: 10px 50px;
+  display: block;
+  overflow: auto;
+  min-width: 400px;
+}
+
+.messagesArea div {
+  padding: 5px 20px 12px 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  position: relative;
+  background-color: #fff;
+}
+
+.messagesArea div::before {
+  content: '';
+  width: 5px;
+  height: 100%;
+  background-color: #ffffff;
+  position: absolute;
+  left: -37px;
+  top: 35px;
+}
+
+.messagesArea p {
+  color: #212529;
+}
+.messagesArea p::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  border: 1px solid rgb(116, 160, 116);
+  position: absolute;
+  left: -45px;
+  top: 20px;
+  background-color: #fff;
+}
+
+.messagesAreaspan {
+  color: #777;
+  font-size: 0.8rem;
+}
+
+.chat form {
+  width: 100%;
+}
+
+.chat input {
+  width: 100%;
+  margin-right: 7px;
+  padding: 10px 20px;
+  border: none;
+  border-top: 1px solid #aaa;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.modal {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 5px;
+  width: 450px;
+  padding: 10px;
+  top: 20px;
+  left: 20px;
+  background-color: #ffffff;
+}
+
+.modal p {
+  margin: 10px 0;
+}
+
+.modal form {
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 330px;
+}
+
+.modal input {
+  padding: 1px 5px 4px 7px;
+  width: 150px;
+}
+
+.modal input:invalid {
+  color: red;
+  border-color: red;
+}
+
+.modal button {
+  padding: 0.23rem 10px;
+  width: 75px;
+}
+
+.modal .tooltip {
+  color: red;
+}

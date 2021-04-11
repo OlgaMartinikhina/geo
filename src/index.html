@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Geo</title>
+</head>
+<body>
+  <h1>Geo</h1>
+  <div class="container">
+    
+    <div class="chat">
+      <div class="messagesArea">
+      </div>
+      <form action="submit">
+        <input type="text" placeholder="Введите текст">
+      </form>
+    </div>
+
+    <div class="modal hidden">
+      <p>Что-то пошло не так</p>
+      <p>К сожалению, нам не удалось определить ваше местоположение, пожалуйста, дайте разрешение на использование геолакации, либо введите координаты вручную. Введите Широту и долготу через запятую</p>
+      <form action="submit" novalidate>
+        <input type="text" name="gps" placeholder="[57.62607, 39.88447]">
+        <button type="reset">Отмена</button>
+        <button type="submit">Ok</button>
+      </form>
+      <div class="tooltip"></div>
+    </div>
+
+  </div>
+</body>
+</html>
